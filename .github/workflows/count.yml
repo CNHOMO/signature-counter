@@ -10,7 +10,7 @@ jobs:
       - name: Setup S.C.
         id: sc-dl
         run: |
-          wget "https://github.com/LGBT-CN/signature-counter/releases/download/0.0.1/x86_64-unknown-linux-musl"
+          wget "https://github.com/CNHOMO/signature-counter/releases/download/0.0.1/x86_64-unknown-linux-musl"
           chmod +x ./x86_64-unknown-linux-musl
           chmod +w *
       - name: Run S.C.
@@ -19,8 +19,8 @@ jobs:
           rm -f ./x86_64-unknown-linux-musl
       - name: Commit S.C.
         run: |
-          git config user.name KevinZonda
-          git config user.email 33132228+KevinZonda@users.noreply.github.com
+          git config user.name NiuFuyu855
+          git config user.email 3327223191@qq.com
           git add .
           git commit -m "S.C.: `date "+%Y-%m-%d %H:%M:%S UTC%:z"`" || true
       - name: Push changes
